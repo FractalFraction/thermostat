@@ -1,0 +1,22 @@
+{
+  "name": "thermostat",
+  "version": "1.0.0",
+  "description": "![](./images/thermostat-styled.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FractalFraction/mse-software-development1.git"
+  },
+  "author": "Colin Gardiner, Dee Rangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FractalFraction/mse-software-development1/issues"
+  },
+  "homepage": "https://github.com/FractalFraction/mse-software-development1#readme",
+  "devDependencies": {
+    "jasmine": "^3.8.0"
+  }
+}

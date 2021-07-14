@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .rectangle {
+            height: 50px;
+            width: 500px;
+            background-color: rgb(97, 100, 97);
+            float: center
+        }
+        .myDiv {
+        position: relative; left: 80px; 
+        top: 2px; background-color:rgb(207, 35, 35);
+        text-align: center;
+        height: 150px;
+        width: 600px
+        }
+    </style>
+</head>
+
+<body>
+<div class="myDiv">
+    <div style = "color:white" >
+        <h1>The Best Thermometer in the World</h1>
+    </div>
+    <div class="rectangle" style = "position: absolute;
+    left: 50px;
+    top: 50px">
+    </div>
+    <p>
+    <button style="position: absolute;
+    left: 300px;
+    top: 110px">-</button>
+    <button style="position: absolute;
+    left: 320px;
+    top: 110px">+</button>
+    </p>
+</div>
+<script src="interface.js"> </script>
+<script src="./src/thermostat.js"> </script>
+</body>
+
+</html>
