@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  opacity: 0.5
+}
+
+h1 {
+  color: white;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: white;
+  font-family: verdana;
+  font-size: 100%;
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.rectangle {
+  height: 50px;
+  width: 500px;
+  background-color: rgb(97, 100, 97);
+  float: center;
+}
+.myDiv {
+  position: relative;
+  left: 80px;
+  top: 2px;
+  background-color: rgb(207, 35, 35);
+  text-align: center;
+  height: 150px;
+  width: 600px;
+}
+
+.downbutton {
+  background-color: rgb(4, 119, 252);
+  opacity: 0;
+  color: blue;
+}
+
+.upbutton {
+  background-color: rgb(224, 29, 23);
+  opacity: 0;
+  color: red;
+}
+
+.trans {
+  opacity: 0.5
+}

@@ -4,7 +4,7 @@
   "description": "![](./images/thermostat-styled.png)",
   "main": "index.js",
   "scripts": {
-    "test": "npx jasmine"
+    "test": "npx jasmine-browser-runner runSpecs"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/FractalFraction/mse-software-development1#readme",
   "devDependencies": {
-    "jasmine": "^3.8.0"
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "jasmine": "^3.8.0",
+    "jasmine-browser-runner": "^0.6.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

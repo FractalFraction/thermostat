@@ -2,44 +2,53 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .rectangle {
-            height: 50px;
-            width: 500px;
-            background-color: rgb(97, 100, 97);
-            float: center
-        }
-        .myDiv {
-        position: relative; left: 80px; 
-        top: 2px; background-color:rgb(207, 35, 35);
-        text-align: center;
-        height: 150px;
-        width: 600px
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<div class ="wrapper">
 <div class="myDiv">
     <div style = "color:white" >
-        <h1>The Best Thermometer in the World</h1>
+        <h1 id="title" style = "color:white; font-style: normal; font-weight: 700;" >The Best Thermometer in the World</h1>
     </div>
-    <div class="rectangle" style = "position: absolute;
+    <div id="temp-bar" class="rectangle" style = "position: absolute;
     left: 50px;
-    top: 50px">
+    top: 50px; background-color: orange">
     </div>
-    <p>
-    <button style="position: absolute;
+    <p id="message" style="position: absolute;
     left: 300px;
-    top: 110px">-</button>
-    <button style="position: absolute;
-    left: 320px;
-    top: 110px">+</button>
-    </p>
+    top: 50px; font-weight: 700; color: white">20</p> 
+   
+    <button id="button-ps" style="position: absolute;
+    left: 400px;
+    top: 110px">Power Saving: On</button>
+    <button id="button-reset" style="position: absolute;
+    left: 200px;
+    top: 110px">Reset</button>
+    <p id="usage" style="position: absolute;
+    left: 300px;
+    top: 150px; color: orange">medium-usage</p>
 </div>
-<script src="interface.js"> </script>
+
+<div class = one >
+ <button id="button-down" class="downbutton">-</button>
+    <button id="button-up" class="upbutton">+</button>
+</div>
+
+<div class = two>
+    <p>City</p>
+    <input id="search-box" type="text" placeholder="Enter a city here">
+    <p id="weather">...</p>
+</div>
+</div>
+
+ <img src="thermometer.jpg" class="trans"> 
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="./src/thermostat.js"> </script>
+<script src="interface.js"> </script>
+
 </body>
 
 </html>
